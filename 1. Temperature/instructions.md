@@ -123,6 +123,9 @@ return 'Invalid temperature option provided.'
 
 ### Solution
 
+<details>
+<summary>Reveal</summary>
+
 ```javascript
 function displayTemperature(temperature, option) {
     if (option === 'celsius') {
@@ -135,8 +138,10 @@ function displayTemperature(temperature, option) {
         return 'Invalid temperature option provided.'
     }
 }
-
 ```
+
+</details>
+<br>
 
 ## Key Concepts to Remember
 
