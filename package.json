@@ -7,7 +7,8 @@
     "test": "jest",
     "test:watch": "jest --watch",
     "test:coverage": "jest --coverage",
-    "play": "node 5.\\ Rock\\ Paper\\ Scissors/rockPaperScissors.js"
+    "play": "node 5.\\ Rock\\ Paper\\ Scissors/rockPaperScissors.js",
+    "secretMessage": "node 7.\\ Coded\\ Message/codedMessage.js"
   },
   "keywords": [
     "javascript",
