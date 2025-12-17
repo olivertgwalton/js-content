@@ -1,17 +1,29 @@
 function celsiusToFahrenheit(celsius) {
-  // Your code here
+  celsius = parseFloat(celsius);
+  fahrenheit = (celsius * 9) / 5 + 32;
+  return fahrenheit;
 }
 
 function fahrenheitToCelsius(fahrenheit) {
-  // Your code here
+  fahrenheit = parseFloat(fahrenheit);
+  celsius = ((fahrenheit - 32) * 5) / 9;
+  return celsius;
 }
 
 function displayTemperature(temperature, option) {
-  // Your code here
+  if (option === "celsius") {
+    const fahrenheit = celsiusToFahrenheit(temperature);
+    return `The temperature is ${temperature} degrees celsius, ${fahrenheit} degrees fahrenheit.`;
+  } else if (option === "fahrenheit") {
+    const celsius = fahrenheitToCelsius(temperature);
+    return `The temperature is ${celsius} degrees celsius, ${temperature} degrees fahrenheit.`;
+  } else {
+    return "Invalid temperature option provided.";
+  }
 }
 
 module.exports = {
   celsiusToFahrenheit,
   fahrenheitToCelsius,
-  displayTemperature
+  displayTemperature,
 };
