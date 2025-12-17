@@ -1,7 +1,18 @@
 function calculateDogAge(humanYears) {
-    // Your code here
+  if (!humanYears || humanYears <= 0 || typeof humanYears !== "number") {
+    return 0;
+  }
+
+  if (humanYears <= 2) {
+    return humanYears * 10.5;
+  }
+
+  const earlyYears = 2 * 10.5;
+  const laterYears = (humanYears - 2) * 4;
+
+  return earlyYears + laterYears;
 }
 
 module.exports = {
-    calculateDogAge
+  calculateDogAge,
 };
